@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tasniema/alarousa-aldmshqia.git/static/css/main.448c4b08.css",
+    "main.js": "/Tasniema/alarousa-aldmshqia.git/static/js/main.3fedefa2.js",
+    "index.html": "/Tasniema/alarousa-aldmshqia.git/index.html",
+    "main.448c4b08.css.map": "/Tasniema/alarousa-aldmshqia.git/static/css/main.448c4b08.css.map",
+    "main.3fedefa2.js.map": "/Tasniema/alarousa-aldmshqia.git/static/js/main.3fedefa2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.448c4b08.css",
+    "static/js/main.3fedefa2.js"
+  ]
+}
