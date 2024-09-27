@@ -1,0 +1,125 @@
+.Home {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: #ffffff;
+  z-index: 1;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.Home h1 {
+  font-size: 4vi;
+  font-family: cursive;
+  width: 70%;
+  animation: slideLeftReturn 2s;
+}
+
+.Home h2 {
+  width: 75%;
+}
+
+.Home img {
+  border-radius: 50%;
+  border: 5px solid wheat;
+  width: 60%;
+  margin-right: 5%;
+  animation: spin 28s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rightSide {
+  padding-left: 10%;
+  animation: slideLeftReturn 2s;
+}
+
+.Home button {
+  background-color: #d35400;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  font-size: larger;
+  color: white;
+  cursor: pointer;
+  animation: slideLeftReturn 2s;
+}
+
+@keyframes slideLeftReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 768px) {
+  .Home {
+    top: 30%;
+    padding: 0 2%;
+    gap: 55px;
+  }
+
+  .Home h1 {
+    font-size: 4vw;
+  }
+
+  .Home h3 {
+    font-size: 2vw;
+  }
+
+  .Home img {
+    width: 20%;
+  }
+
+  .Home button {
+    font-size: medium;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Home {
+    top: 28%;
+    padding: 0 1%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .Home h1 {
+    font-size: 9vw;
+    /* Increase font size */
+    width: 100%;
+  }
+
+  .Home img {
+    display: none;
+  }
+
+  .Home h3 {
+    font-size: 4vw;
+  }
+
+  .Home button {
+    font-size: small;
+    padding: 8px 16px;
+  }
+}

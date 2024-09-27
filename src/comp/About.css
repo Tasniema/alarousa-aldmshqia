@@ -1,0 +1,155 @@
+
+.About {
+  background-color: rgb(245, 245, 241);
+  padding: 2%;
+  padding-left: 100px;
+  display: flex;
+  gap: 7%;
+  font-family: sans-serif;
+}
+.AboutUsexp{
+ display: grid;
+}
+.exper{
+  align-items: baseline;
+  display: flex;
+  gap: 8px;
+}
+.image {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.About img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+img.half {
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s ease;
+}
+
+img.half:hover {
+  width: 200px;
+  height: 200px;
+}
+img.half.right{
+margin-top: 60px;
+}
+img.half.right:hover{
+  margin-top: 10px;
+  }
+img.half.left {
+  margin-bottom: 13%;
+  margin-left: 60px;
+  transition: all 0.5s ease;
+}
+
+img.half.left:hover {
+  width: 200px;
+  height: 200px;
+  margin-left: 1%;
+  margin-bottom: 10px;
+}
+.About span{
+  color: #d35400;
+  font-family: cursive;
+  font-size: 30px;
+}
+.About h1{
+color: #d35400;
+font-size: 30px;
+}
+p{
+  color: gray;
+}
+.aboutUs{
+  width: 90%;
+  padding-top: 9%;
+}
+.ten{
+  color: #d35400;
+font-size: 40px;
+font-weight: 1000;
+}
+.ten::before{
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  height: 50px;
+  width: 5px;
+  background-color: #d35400;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.custom-slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+.custom-slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+@media (max-width : 780px){
+  .About{
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width : 480px){
+  .About{
+    flex-direction: column-reverse;
+    padding-left: 30px;
+  }
+  .aboutUs {
+    width: 100%;
+}
+.About span, .About h1 {
+  font-size: 23px;
+}
+.exper{
+  display: block;
+}
+.About img {
+  width: 80px;
+  height: 70px;
+}
+img.half.right {
+  margin-top: 8px;
+}
+img.half.left {
+  margin-bottom: 4%;
+  margin-left: 10px;
+}
+img.half.left:hover {
+  width: 100px;
+  height: 100px;
+}
+img.half:hover {
+  width: 100px;
+  height: 100px;
+}
+}
